@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wybierz stronę</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background-color: white;
+            color: #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            background-color: #f8f9fc;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Wybierz gdzie chcesz przejść:</h1>
+
+    <div class="button-container">
+        <button onclick="window.open('https://oli151.github.io/Dzia-aniaNaU-amkach/', '_blank')">
+            Działania na ułamkach
+        </button>
+
+        <button onclick="window.open('https://oli151.github.io/Lon40PoleFigur/', '_blank')">
+            Pole figur
+        </button>
+
+        <button onclick="window.open('https://oli151.github.io/Lon40OliwierElektronika/', '_blank')">
+            Elektronika
+        </button>
+    </div>
+
+</body>
+</html>
